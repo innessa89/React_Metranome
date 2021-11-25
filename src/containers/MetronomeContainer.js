@@ -3,6 +3,7 @@ import MetronomeHeader from '../components/MetronomeHeader';
 import MetronomeRange from '../components/MetronomeRange';
 
 const MetronomeContainer = () => {
+
     return(
         <div>
             <MetronomeHeader/>
