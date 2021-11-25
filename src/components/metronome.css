@@ -3,20 +3,61 @@
     max-width: 375px;
     margin: 0 auto;
     padding: 30px;
+    background-color: rebeccapurple;
+    border-radius: 25px
+    ;
   }
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  background-color: seagreen;
+  border-radius: 10px;
+}
+
+  .bpm {
+    font-size: 15px;
+}
   
   .bpm-slider input {
     width: 100%;
     margin: 10px;
   }
   
-  .metronome button {
-    background: #c94d46;
+  .metronome-button {
+    /* background: #c94d46; */
     padding: 10px;
-    border: 1px solid #832420;
-    border-radius: 2px;
-    width: 100px;
-    color: #fff;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 60px;
+    color: red;
     font-size: 18px;
+    margin: 5px;
+    transition-duration: 0.4s;
+  }
+
+  .metronome-button:hover {
+    background-color: hotpink;
+    color: white;
+  }
+
+  .giggle-button {
+    /* background: #c94d46; */
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 150px;
+    color: red;
+    font-size: 18px;
+    margin: 5px;
+    transition-duration: 0.4s;
+  }
+
+  .giggle-button:hover {
+    background-color: hotpink;
+    color: white;
   }
   
