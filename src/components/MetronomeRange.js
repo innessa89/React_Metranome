@@ -13,7 +13,7 @@ const MetronomeRange = () => {
 
     useEffect(() => {
         
-      }, [isPlaying])
+      }, [isPlaying],)
 
     const startInterval = () => {
         let BPM = (1000 * 60) / sliderValue
@@ -36,14 +36,9 @@ const MetronomeRange = () => {
         setIsPlaying(!isPlaying)
     }
 
-    const handleAddBPM = () => {
-        console.log("add-button is clicked")
-        
-    }
 
     const handleSliderMove = function(newValue) {
         setSliderValue(newValue)
-        // calcluateInterval = (newValue / 60) * 1000
     }
 
     return(
@@ -53,20 +48,13 @@ const MetronomeRange = () => {
                     <h1>{sliderValue}<span className="bpm">BPM</span></h1>
                     <input onChange={(event) => handleSliderMove(event.target.value)} type="range" min="40" max="240" defaultValue={sliderValue} id="myRange"></input>
                 </div>
-                {/* <input onChange={(event) => handleSliderMove(event.target.value)} type="range" min="40" max="240" defaultValue={sliderValue} id="myRange"></input> */}
                 <div className="range-content">
                 <button className="metronome-button" onClick={startInterval}>Start</button>
                 <button className="metronome-button" onClick={stopInterval}>Stop</button>
                 <button className="giggle-button" onClick={startGiggle}>Have a Giggle</button>
-                <audio controls>
-                {/* <source src="horse.ogg" type="audio/ogg"> */}
-                Your browser does not support the audio element.
-                </audio>
-                {/* <input onChange={(event) => handleSliderMove(event.target.value)} type="range" min="40" max="240" defaultValue={sliderValue} id="myRange"></input> */}
                 </div>
             </div>
         </div>
-        
     )
 }
 
